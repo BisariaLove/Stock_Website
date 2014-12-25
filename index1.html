@@ -1,0 +1,53 @@
+<html>
+<head>
+<style>
+.input_box{
+	border-style:solid;
+	padding:3px;
+	border-width: 2px;
+}
+</style>
+
+<script type="text/javascript">
+function check()
+{
+var url= document.getElementById("CName").value;
+if(url.length<1)
+{
+	alert("Please Enter a Company Symbol");
+	return false;
+}
+	return true;
+}
+</script>
+
+
+</head>
+<body>
+<table>
+
+<form  action="search_stock_2.php"  method="POST" >
+<center>
+<b><font size="6">Market Stock Research</font></b>
+</center>
+
+<table align= "center">
+
+<tr>
+	<td width='100%'>
+	<div class='input_box'>
+		
+	Company Symbol:<Input type='text' name='CompanyName' id='CName' style="width:350px"/>
+	<input type="submit"  name="submit" id='search' value='Search'/>
+	<br/>
+	Example: GOOG, MSFT,YHOO,FB, AAPL,...etc
+
+	</div>
+	</td>
+</tr>
+
+
+</table>
+
+</form>
+</div>
